@@ -1,0 +1,43 @@
+{
+	"name": "xskt-ts-boiler",
+	"version": "1.0.0",
+	"description": "This is my typescript-project boilerplate! It's not perfect, but it's worked great for me.",
+	"main": "dist/cascade.cjs.js",
+	"module": "dist/cascade.esm.js",
+	"types": "dist/cascade.d.ts",
+	"private": false,
+	"keywords": [
+		"xskt",
+		"ts",
+		"typescript",
+		"boilerplate",
+		"boiler",
+		"tutorial",
+		"template"
+	],
+	"scripts": {
+		"clean": "rimraf dist",
+		"build:types": "dts-bundle-generator -o dist/index.d.ts source/index.ts",
+		"build": "pnpm run clean && node esbuild.cjs && pnpm run build:types",
+		"watch": "pnpm run clean && node esbuild.cjs --watch",
+		"start": "node dist/index.cjs.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xskutsu/xskt-ts-boiler.git"
+	},
+	"author": {
+		"name": "xskutsu",
+		"url": "https://github.com/xskutsu"
+	},
+	"bugs": {
+		"url": "https://github.com/xskutsu/xskt-ts-boiler"
+	},
+	"homepage": "https://github.com/xskutsu/xskt-ts-boiler#readme",
+	"dependencies": {
+		"dts-bundle-generator": "^9.5.1",
+		"esbuild": "^0.25.9",
+		"rimraf": "^6.0.1",
+		"typescript": "^5.9.2"
+	}
+}
