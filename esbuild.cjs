@@ -27,7 +27,7 @@ const presets = [
 		outfile: "dist/index.global.js",
 		// This is the namespace. Think about how jquery has $ or lodash has _.
 		// If you export Entity, then you would write window.SampleModule.Entity to access it.
-		globalName: "SampleModule", 
+		globalName: "SampleModule",
 		platform: "browser"
 	}
 ];

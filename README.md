@@ -22,7 +22,7 @@ npm install -g pnpm@latest-10
 ├─ dist/            # Build outputs. These are the actual JS that runs.
 ├─ esbuild.cjs      # My custom esbuild configuration.
 ├─ package.json     # Project information.
-├─ README.md        # What you are looking at right now. 
+├─ README.md        # What you are looking at right now.
 ├─ TODO.md          # A very cool list to follow along with
 └─ LICENSE          # The legality.
 ```

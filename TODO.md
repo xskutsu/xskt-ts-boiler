@@ -3,7 +3,7 @@
 # README.md
 - [ ] Read the readme
 
-# Prerequisits
+# Prerequisites
 - [ ] Node.js LTS installed
 - [ ] pnpm installed
 
